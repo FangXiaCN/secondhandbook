@@ -1,3 +1,15 @@
+ /**
+  *
+  * @Package:        com.example.book
+  * @ClassName:      MainActivity
+  * @Description:    APP打开后主要的activity，导航栏按钮绑定四个点击事件，点击后创建对应的fragment。
+  * @Author:         方侠
+  * @CreateDate:     2019/11/29 14:12
+  * @UpdateUser:     更新者
+  * @UpdateDate:     2019/11/29 14:12
+  * @UpdateRemark:   更新内容
+  * @Version:        1.0
+  */
 package com.example.book;
 
 import android.os.Bundle;
@@ -11,27 +23,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    // 定义4个Fragment对象
+    // 定义导航栏四个按钮对应的4个Fragment对象
     private FirstPage firstyear_fg;
     private Mine mine_fg;
     private Message message_fg;
     private Circle circle_fg;
 
-    // 帧布局对象，用来存放Fragment对象
-    private FrameLayout frameLayout;
-    // 定义每个选项中的相关控件
+    // 导航栏每个按钮对应的布局
     private LinearLayout firstpageLayout;
     private LinearLayout circleLayout;
     private LinearLayout messageLayout;
     private LinearLayout mineLayout;
-
+//    导航栏每个按钮对应的布局下的图片
     private ImageView firstpageImg;
     private ImageView circleImg;
     private ImageView messageImg;
     private ImageView mineImg;
-
+//    导航栏每个按钮对应的布局下的文本
     private TextView firstpageText;
     private TextView circleText;
     private TextView messageText;
