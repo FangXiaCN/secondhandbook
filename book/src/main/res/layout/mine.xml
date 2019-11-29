@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/images_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/t_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="二手书城"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="学校："
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/t_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.44"
+                    android:text="******"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 上圆角-->
+        <LinearLayout
+            android:id="@+id/personalinformationLayout"
+            style="@style/top_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="个人资料" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="2px" />
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="我的订单" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="2px" />     <!-- 分割线 -->
+
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="消息通知" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <!-- 无圆角-->
+
+        <View
+            style="@style/bg_line"
+            android:layout_height="2px" />
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="问题与反馈" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="设置" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="?attr/colorPrimary"
+        android:text="退出登陆"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

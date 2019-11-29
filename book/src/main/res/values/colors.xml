@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#002313</color>
+    <color name="title_bottom">#321312</color>
+    <color name="selected">#03A9F4</color>
+    <color name="gray">#421411</color>
+    <color name="colorPrimary">#2f86db</color>
+    <color name="colorPrimaryDark">#479EEF</color>
+    <color name="colorAccent">#40EFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="transparent">#f1f2fa</color>
+    <color name="text_gray">#797979</color>
+    <color name="text_bule">#0093ce</color>
+    <color name="bg_gray">#F6F6F6</color>
+    <!-- 描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="blue">#419DE4</color>
+    <color name="sblue">#C74DADF7</color>
+    <color name="darker_gray">#EFEEEE</color>
+    <color name="darker_red">#cdff3a3a</color>
+    <color name="bg_black">#000000</color>
+    <color name="divider_line_color">#5F0F0F</color>
+</resources>
