@@ -1,0 +1,2 @@
+include ':example', ':book'
+rootProject.name='My Application'
