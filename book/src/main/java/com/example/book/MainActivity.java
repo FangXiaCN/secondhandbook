@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // 定义导航栏四个按钮对应的4个Fragment对象
     private FirstPage firstyear_fg;
     private Mine mine_fg;
-    private Message message_fg;
+    private Search search_fg;
     private Circle circle_fg;
 
     // 导航栏每个按钮对应的布局
@@ -144,11 +144,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 messageText.setTextColor(dark);
                 messageLayout.setBackgroundColor(gray);
 
-                if (message_fg == null) {
-                    message_fg = new Message();
-                    fragmentTransaction.add(R.id.content, message_fg);
+                if (search_fg == null) {
+                    search_fg = new Search();
+                    fragmentTransaction.add(R.id.content, search_fg);
                 } else {
-                    fragmentTransaction.show(message_fg);
+                    fragmentTransaction.show(search_fg);
                 }
 
                 break;
@@ -207,8 +207,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             fragmentTransaction.hide(circle_fg);
         }
 
-        if (message_fg != null) {
-            fragmentTransaction.hide(message_fg);
+        if (search_fg != null) {
+            fragmentTransaction.hide(search_fg);
         }
 
         if (mine_fg != null) {
